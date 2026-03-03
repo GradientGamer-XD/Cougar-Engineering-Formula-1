@@ -1,0 +1,12 @@
+This pointer file is a placeholder of an unsyncable roblox instance
+The Metadata and properties is shown below
+use this to replace the pointer with the actual instance in Studio
+
+
+[CLASS] = "UnreliableRemoteEvent"
+[PROPERTIES] = {
+
+	[NAME] = "Remote"
+	[PARENT] = "Transition_Handler"
+
+}

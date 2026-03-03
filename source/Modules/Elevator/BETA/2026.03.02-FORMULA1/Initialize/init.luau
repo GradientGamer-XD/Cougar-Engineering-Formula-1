@@ -5,9 +5,11 @@ local setup = require(modules.Setup)
 
 module.Controllers = {}
 
+local logger = require(script:WaitForChild("Dependencies"):WaitForChild("SimpleLoggingFramework4LuaU")).getLogger("Formula 1")
+
 function module.start(source, config, version_meta, loader_meta)
 	
-	warn(`Elevator {source.Name}: Initializing elevator... \n	Version: {version_meta.branch}\n	{version_meta.version}`)
+	logger:warn(`Elevator {source.Name}: Initializing elevator... \n	Version: {version_meta.branch}\n	{version_meta.version}`)
 	
 	local data = setup.new(source, config, version_meta, loader_meta)
 	print(data)
